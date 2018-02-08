@@ -7,7 +7,7 @@ Consider the example:
     
     function add(factor) {
         return function(x) {
-	    return x + factor;
+            return x + factor;
         }
     }
 
