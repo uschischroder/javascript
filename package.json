@@ -1,0 +1,28 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "javascript examples",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dudu84/javascript.git"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs",
+    "test",
+    "chai"
+  ],
+  "author": "Luiz Eduardo de Christo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dudu84/javascript/issues"
+  },
+  "homepage": "https://github.com/dudu84/javascript#readme"
+}
