@@ -2,33 +2,6 @@ const { assert } = require('chai');
 var  Map = require('../src/map');
 
 describe('Map', function() {
-	describe('getValues()', function(){
-		
-		it('should return a non empty array', function() {
-			let arr = Map.generate();
-			assert.isArray(arr);
-		});
-
-		it('should return an array with correct default size', function() {
-			let arr = Map.generate();
-			assert.lengthOf(arr, 1000);	
-		});
-
-		it('should return an array with correct user defined size', function() {
-			let arr = Map.generate(10);
-			assert.lengthOf(arr, 10);
-		});
-
-		it('should return default size if size param is null or undefined', function() {
-			let arr;
-            arr = Map.generate(null);
-			assert.lengthOf(arr, 1000);
-		
-			arr = Map.generate(undefined);
-			assert.lengthOf(arr, 1000);
-		});
-
-	});
 
 	describe('getAvailableOperations()', function(){
 		var availableOps;
