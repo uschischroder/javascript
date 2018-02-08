@@ -4,12 +4,12 @@ Javascript examples
 ## 1. Arrow notations reductions
 
 Consider the example:
-
-   function add(factor) {
-      return function(x) {
-	     return x + factor;
-	  }
-  }
+    
+    function add(factor) {
+        return function(x) {
+	    return x + factor;
+        }
+    }
 
 Can be coded using arrow notation as:
 
