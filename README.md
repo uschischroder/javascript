@@ -1,7 +1,7 @@
 # javascript [![Build Status](https://travis-ci.org/dudu84/javascript.svg?branch=master)](https://travis-ci.org/dudu84/javascript)
 Javascript examples
 
-## 1. Arrow notations reductions
+## 1. Arrow notation reductions
 
 Consider the example:
     
