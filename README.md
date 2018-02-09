@@ -2,9 +2,11 @@
 Javascript Map, Filter, Reduce examples
 
 This project was built with the intention to learn and also to serve as a source for the ones who are seeking to learn.
-Each one of Map, Reduce and Filter were implemented as modules also to learn this very important concept.
+Each one of Map, Reduce and Filter were implemented as modules aiming to solidify the understading about this very important concept.
 
-Build with Javascript (ES6) and TDD.
+Other ES6 concepts are used as: arrow notation and destructuring.  
+
+Implemented with TDD.
 
 
 Uses Mocha, Chai, Grunt.
