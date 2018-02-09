@@ -1,10 +1,10 @@
 const { assert } = require('chai');
-var  Map = require('../src/map');
+const  Map = require('../src/map');
 
 describe('Map', function() {
 
 	describe('getAvailableOperations()', function(){
-		var availableOps;
+		let availableOps;
 
 		beforeEach(function() {
 			availableOps = Map.getAvailableOperations();			

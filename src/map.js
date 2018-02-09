@@ -1,8 +1,8 @@
-var getAvailableOperations = function() {
+const getAvailableOperations = function() {
   return availableOperations;
 };
 
-var applyOperation = function (arr, operation, factor) {
+const applyOperation = function (arr, operation, factor) {
   let func = availableOperations[operation];
   return func && arr.map(func(factor));
 };
@@ -10,7 +10,7 @@ var applyOperation = function (arr, operation, factor) {
 const add = (factor) => (x) => x + factor;
 const product = (factor) => (x) => x*factor;
 
-var availableOperations = {
+const availableOperations = {
   add: add,
   product: product
 };

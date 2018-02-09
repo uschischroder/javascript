@@ -1,8 +1,8 @@
-var getAvailableOperations = function() {
+const getAvailableOperations = function() {
 	return availableOperations;
 };
 
-var applyOperation = function(arr, operation) {
+const applyOperation = function(arr, operation) {
 	let func = availableOperations[operation];
 	return func && arr.reduce(func);
 };
@@ -10,7 +10,7 @@ var applyOperation = function(arr, operation) {
 const add = (acc, curr) => acc + curr;
 const product = (acc, curr) => acc*curr;
 
-var availableOperations = {
+const availableOperations = {
 	add: add,
 	product: product
 };
