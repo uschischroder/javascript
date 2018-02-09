@@ -1,8 +1,6 @@
-const getAvailableOperations = function() {
-	return availableOperations;
-};
+const getAvailableOperations = () =>  availableOperations;
 
-const applyOperation = function(arr, operation) {
+const applyOperation = (arr, operation) => {
 	let func = availableOperations[operation];
 	return func && arr.reduce(func);
 };

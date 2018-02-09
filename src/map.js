@@ -1,8 +1,6 @@
-const getAvailableOperations = function() {
-  return availableOperations;
-};
+const getAvailableOperations = () => availableOperations;
 
-const applyOperation = function (arr, operation, factor) {
+const applyOperation = (arr, operation, factor) => {
   let func = availableOperations[operation];
   return func && arr.map(func(factor));
 };
