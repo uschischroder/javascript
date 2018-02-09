@@ -1,6 +1,6 @@
 const getRandom = () => Math.random()*2001 - 1000;
 
-const generate = function(n) {
+const generate = (n) => {
     if (n == undefined || n == null) n = 1000;
 
     let arr = new Array(n);
