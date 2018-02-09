@@ -1,5 +1,5 @@
 const { assert } = require('chai');
-var  Random = require('../src/random');
+const  Random = require('../src/random');
 
 describe('Random', function() {
 

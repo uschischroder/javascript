@@ -3,7 +3,7 @@ const getAvailableConditions = function() {
 };
 
 const applyFilter = function(arr, condition, toCompare){
-    let func = avaialableConditions[condition];
+    let func = availableConditions[condition];
     result = func && arr.filter(func(toCompare));
     return result;
 };
