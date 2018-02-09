@@ -15,19 +15,27 @@ const multiple = function(toCompare) {
 };
 
 const lesserThan = function (toCompare) {
-    throw 'Not implemented yet.';
+   return function(x) {
+       return x < toCompare;
+   }
 };
 
 const lesserOrEqualThan = function (toCompare) {
-    throw 'Not implemented yet.';
+    return function(x) {
+        return x <= toCompare;
+    }
 };
 
 const greaterThan = function(toCompare) {
-    throw 'Not implemented yet.';
+    return function(x) {
+        return x > toCompare;
+    }
 };
 
 const greaterOrEqualThan = function (toCompare) {
-    throw 'Not implemented yet.';
+    return function(x) {
+        return x >= toCompare;
+    }
 };
 
 const custom = function(toCompare) {
