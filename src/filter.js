@@ -11,31 +11,31 @@ const applyFilter = function(arr, condition, toCompare){
 const multiple = function(toCompare) {
     return function(x) {
         return x % toCompare === 0;
-    }
+    };
 };
 
 const lesserThan = function (toCompare) {
    return function(x) {
        return x < toCompare;
-   }
+   };
 };
 
 const lesserOrEqualThan = function (toCompare) {
     return function(x) {
         return x <= toCompare;
-    }
+    };
 };
 
 const greaterThan = function(toCompare) {
     return function(x) {
         return x > toCompare;
-    }
+    };
 };
 
 const greaterOrEqualThan = function (toCompare) {
     return function(x) {
         return x >= toCompare;
-    }
+    };
 };
 
 const custom = function(toCompare) {
