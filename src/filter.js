@@ -1,44 +1,18 @@
-const getAvailableConditions = function() {
-    return availableConditions;
-};
+const getAvailableConditions = () => availableConditions;
 
-const applyFilter = function(arr, condition, toCompare){
+const applyFilter = (arr, condition, toCompare) => {
     let func = availableConditions[condition];
     result = func && arr.filter(func(toCompare));
     return result;
 };
 
-const multiple = function(toCompare) {
-    return function(x) {
-        return x % toCompare === 0;
-    };
-};
+const multiple = (toCompare) => (x) => x % toCompare === 0;
+const lesserThan = (toCompare) => (x) => x < toCompare;
+const lesserOrEqualThan = (toCompare) => (x) => x <= toCompare;
+const greaterThan = (toCompare) => (x) => x > toCompare;
+const greaterOrEqualThan = (toCompare) => (x) => x >= toCompare;
 
-const lesserThan = function (toCompare) {
-   return function(x) {
-       return x < toCompare;
-   };
-};
-
-const lesserOrEqualThan = function (toCompare) {
-    return function(x) {
-        return x <= toCompare;
-    };
-};
-
-const greaterThan = function(toCompare) {
-    return function(x) {
-        return x > toCompare;
-    };
-};
-
-const greaterOrEqualThan = function (toCompare) {
-    return function(x) {
-        return x >= toCompare;
-    };
-};
-
-const custom = function(toCompare) {
+const custom = (toCompare) => {
     throw 'Not implemented yet.';
 };
 
